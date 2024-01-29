@@ -1,7 +1,6 @@
 package com.lucasfranca.workshopmongo.entities;
 
 import java.io.Serializable;
-import java.math.BigInteger;
 import java.util.Objects;
 
 import org.springframework.data.annotation.Id;
@@ -13,25 +12,25 @@ public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	private BigInteger id;
+	private String id;
 	private String name;
 	private String email;
 	
 	public User() {
 	}
 
-	public User(BigInteger id, String name, String email) {
+	public User(String id, String name, String email) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 	}
 
-	public BigInteger getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(BigInteger id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

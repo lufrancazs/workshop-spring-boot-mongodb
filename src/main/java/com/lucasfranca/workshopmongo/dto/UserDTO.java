@@ -1,7 +1,6 @@
 package com.lucasfranca.workshopmongo.dto;
 
 import java.io.Serializable;
-import java.math.BigInteger;
 
 import com.lucasfranca.workshopmongo.entities.User;
 
@@ -9,7 +8,7 @@ public class UserDTO implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	
-	private BigInteger id;
+	private String id;
 	private String name;
 	private String email;
 	
@@ -19,11 +18,11 @@ public class UserDTO implements Serializable{
 		email = obj.getEmail();
 	}
 
-	public BigInteger getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(BigInteger id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
